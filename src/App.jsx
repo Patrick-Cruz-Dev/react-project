@@ -102,7 +102,7 @@ function App() {
 
     }
 
-    function quantityHandler(e, item, increment){
+    function quantityHandler(e, id, increment){
         e.stopPropagation();
         let item = items.filter(item => item.id === id) [0];
         item.quantity += increment;
